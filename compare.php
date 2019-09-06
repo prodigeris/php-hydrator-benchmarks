@@ -9,7 +9,11 @@ use HydratorWorkshop\User;
 use Zend\Hydrator\HydratorInterface;
 use function Sauls\Component\Helper\define_object;
 
-const ITERATIONS = 100000;
+$options = getopt('i::');
+
+const DEFAULT_ITERATIONS = 100000;
+$iterations = $options['i'] ?: DEFAULT_ITERATIONS;
+
 require 'vendor/autoload.php';
 
 # DEFINE HYDRATABLE OBJECT
@@ -62,7 +66,7 @@ foreach ($hydrators as $name => $hydrator) {
     ['memory' => $memory, 'time' => $time] = Benchmark::benchmarkMemory(
         $callable,
         [$object, $data, $hydrator],
-        ITERATIONS
+        $iterations
     );
     $memories[$name] = $memory;
     $times[$name] = $time;
