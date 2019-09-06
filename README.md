@@ -3,9 +3,9 @@
 This benchmark will run various [Zend hydrators](https://github.com/zendframework/zend-hydrator),
 [Ocramius hydrator](https://github.com/Ocramius/GeneratedHydrator),
 [Sauls hydrator](https://github.com/sauls/helpers/blob/master/src/object.php#L23)
-and [manual hydration](https://github.com/prodigeris/php-hydrator-benchmarks/blob/master/compare.php#L96-L113).
+and [manual hydration](https://github.com/prodigeris/php-hydrator-benchmarks/blob/master/compare.php#L105-L122).
 
-Object being hydrated and extract is [User](https://github.com/prodigeris/php-hydrator-benchmarks/blob/master/compare.php#L15-L31).
+Object being hydrated and extract is [User](https://github.com/prodigeris/php-hydrator-benchmarks/blob/master/compare.php#L20-L36).
 
 `100 000 iterations`
 
