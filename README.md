@@ -75,8 +75,8 @@ It took 0.12433314323425 ms
 | Zend Class Method |  Very High | Low | [x] High | Low |
 | Zend Reflection |  Medium | Medium | [x] High | [x] None |
 | Zend Array Serializable |  Low | Medium | [x] High | Low |
-| Zend Object Property |  Low | Medium | [x] High | Medium |
-| Sauls Define Object |  Medium | Medium | None | [x] None |
+| Zend Object Property |  Low | Medium | [x] High | Low |
+| Sauls Define Object |  Medium | Medium | Low | [x] None |
 | Manual Hydration |  [x] Very Low | [x] Very High | None | High |
 
 ## Verdict:
