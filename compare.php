@@ -13,7 +13,7 @@ $options = getopt('i::m');
 
 const DEFAULT_ITERATIONS = 100000;
 $iterations = $options['i'] ?? DEFAULT_ITERATIONS;
-$skipManualHydration = $options['m'] ?: false;
+$skipManualHydration = array_key_exists('m', $options);
 
 require 'vendor/autoload.php';
 
