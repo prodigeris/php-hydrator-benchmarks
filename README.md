@@ -1,4 +1,4 @@
-# Hydrator Bechmarks
+# Hydrator Benchmarks
 
 This benchmark will run various [Zend hydrators](https://github.com/zendframework/zend-hydrator),
 [Ocramius hydrator](https://github.com/Ocramius/GeneratedHydrator),
