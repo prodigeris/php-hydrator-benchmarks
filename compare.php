@@ -9,10 +9,11 @@ use HydratorWorkshop\User;
 use Zend\Hydrator\HydratorInterface;
 use function Sauls\Component\Helper\define_object;
 
-$options = getopt('i::');
+$options = getopt('i::m');
 
 const DEFAULT_ITERATIONS = 100000;
-$iterations = $options['i'] ?: DEFAULT_ITERATIONS;
+$iterations = $options['i'] ?? DEFAULT_ITERATIONS;
+$skipManualHydration = $options['m'] ?: false;
 
 require 'vendor/autoload.php';
 
@@ -49,6 +50,10 @@ $hydrators = array(
     'Sauls Define Object' => 'saulsHydration',
     'Manual Hydration' => 'manualHydration',
 );
+
+if($skipManualHydration) {
+    unset($hydrators['Manual Hydration']);
+}
 
 echo "Start hydrators test\n====================\n\n";
 
